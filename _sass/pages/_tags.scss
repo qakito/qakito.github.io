@@ -1,3 +1,4 @@
+@use "sass:color";
 ul.tag-cloud {
   padding: 2em 0 3em;
   margin: 0;
@@ -28,7 +29,7 @@ ul.tag-cloud {
         color: $text-color;
         &:hover,
         &:focus {
-          color: lighten($text-color, 24%);
+          color: color.adjust($text-color, $lightness: 24%);
         }
       }
     }
@@ -50,7 +51,7 @@ ul.tag-cloud {
         color: $danger;
         &:hover,
         &:focus {
-          color: lighten($danger, 24%);
+          color: color.adjust($danger, $lightness: 24%);
         }
       }
     }
