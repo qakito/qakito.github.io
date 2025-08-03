@@ -2,13 +2,15 @@
   * Global setting
   */
 @use 'sass:color';
+@use "mixins" as mixins;
+@use "variables" as vars;
 *,
 *:before,
 *:after {
-  @include box-sizing;
+  @include mixins.box-sizing;
 }
 .notice {
-  border: 1px solid color.adjust($text-color, $lightness: 45%);
+  border: 1px solid color.adjust(vars.$text-color, $lightness: 45%);
   border-radius: 0.4em;
   padding: 0.5em 1em;
 }
@@ -43,20 +45,20 @@ table {
   display: table;
   &.bordered > thead > tr,
   &.bordered > tbody > tr {
-    border-bottom: 1px solid $table-border-color;
+    border-bottom: 1px solid vars.$table-border-color;
   }
   &.striped > tbody {
     > tr:nth-child(odd) {
-      background-color: $table-striped-color;
+      background-color: vars.$table-striped-color;
     }
     > tr > td {
       border-radius: 0;
     }
   }
   &.highlight > tbody > tr {
-    @include transition(background-color .25s ease);
+    @include mixins.transition(background-color .25s ease);
     &:hover {
-      background-color: $table-striped-color;
+      background-color: vars.$table-striped-color;
     }
   }
   &.centered {
@@ -68,7 +70,7 @@ table {
   }
 }
 thead {
-  border-bottom: 1px solid $table-border-color;
+  border-bottom: 1px solid vars.$table-border-color;
 }
 td,
 th {
@@ -79,7 +81,7 @@ th {
   border-radius: 2px;
 }
 tfoot {
-  border-top: 1px solid $table-border-color;
+  border-top: 1px solid vars.$table-border-color;
 }
 
 // Global transition
@@ -98,7 +100,7 @@ h2,
 header,
 input,
 a {
-  @include transition(all .1s ease);
+  @include mixins.transition(all .1s ease);
 }
 
 // Footer
@@ -106,14 +108,14 @@ footer {
   text-align: center;
   padding: 3em 0;
   .heart-icon {
-    color: $danger;
-    text-shadow: 0 0 5px $white, 0 0 10px $danger;
+    color: vars.$danger;
+    text-shadow: 0 0 5px vars.$white, 0 0 10px vars.$danger;
   }
 }
 .related-articles {
   margin-top: 2em;
   h4 {
-    font-family: $font-family-base;
+    font-family: vars.$font-family-base;
   }
   ul {
     margin: 0;

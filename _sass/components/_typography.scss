@@ -6,15 +6,16 @@
 // Global
 //
 @use "sass:color";
+@use "variables" as vars;
 
 html {
-  line-height: $base-line-height;
-  font-family: $font-family-base;
+  line-height: vars.$base-line-height;
+  font-family: vars.$font-family-base;
   font-weight: normal;
-  color: $text-color;
+  color: vars.$text-color;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-size: $font-size-base;
+  font-size: vars.$font-size-base;
 }
 
 //
@@ -26,7 +27,7 @@ blockquote {
 	position: relative;
   padding-left: 20px;
   font-style: italic;
-  border-left: 5px solid $secondary;
+  border-left: 5px solid vars.$secondary;
 }
 
 //
@@ -35,10 +36,10 @@ blockquote {
 
 a {
    text-decoration: none;
-   color: $primary;
+   color: vars.$primary;
    &:hover,
    &:focus {
-     color: color.adjust($primary, $lightness: 14%);
+     color: color.adjust(vars.$primary, $lightness: 14%);
      text-decoration: none;
    }
 }
@@ -54,28 +55,28 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
-  color: $text-color;
+  color: vars.$text-color;
   &:hover,
   &:focus {
-    color: color.adjust($text-color, $lightness: 24%);
+    color: color.adjust(vars.$text-color, $lightness: 24%);
   }
 }
-h1 { font-size: $font-size-h1; margin: calc($font-size-h1 / 2) 0 calc($font-size-h1 / 2.5) 0;}
-h2 { font-size: $font-size-h2; margin: calc($font-size-h2 / 2) 0 calc($font-size-h2 / 2.5) 0;}
-h3 { font-size: $font-size-h3; margin: calc($font-size-h3 / 2) 0 calc($font-size-h3 / 2.5) 0;}
-h4 { font-size: $font-size-h4; margin: calc($font-size-h4 / 2) 0 calc($font-size-h4 / 2.5) 0;}
-h5 { font-size: $font-size-h5; margin: calc($font-size-h5 / 2) 0 calc($font-size-h5 / 2.5) 0;}
-h6 { font-size: $font-size-h6; margin: calc($font-size-h6 / 2) 0 calc($font-size-h6 / 2.5) 0; text-transform: uppercase;}
+h1 { font-size: vars.$font-size-h1; margin: calc(vars.$font-size-h1 / 2) 0 calc(vars.$font-size-h1 / 2.5) 0;}
+h2 { font-size: vars.$font-size-h2; margin: calc(vars.$font-size-h2 / 2) 0 calc(vars.$font-size-h2 / 2.5) 0;}
+h3 { font-size: vars.$font-size-h3; margin: calc(vars.$font-size-h3 / 2) 0 calc(vars.$font-size-h3 / 2.5) 0;}
+h4 { font-size: vars.$font-size-h4; margin: calc(vars.$font-size-h4 / 2) 0 calc(vars.$font-size-h4 / 2.5) 0;}
+h5 { font-size: vars.$font-size-h5; margin: calc(vars.$font-size-h5 / 2) 0 calc(vars.$font-size-h5 / 2.5) 0;}
+h6 { font-size: vars.$font-size-h6; margin: calc(vars.$font-size-h6 / 2) 0 calc(vars.$font-size-h6 / 2.5) 0; text-transform: uppercase;}
 
 //
 // Horizontal rules
 //
 
 hr {
-  margin-top: $spacer-y;
-  margin-bottom: $spacer-y;
+  margin-top: vars.$spacer-y;
+  margin-bottom: vars.$spacer-y;
   border: 0;
-  border-top: $hr-border-width solid $hr-border-color;
+  border-top: vars.$hr-border-width solid vars.$hr-border-color;
 }
 
 //

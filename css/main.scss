@@ -1,27 +1,28 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "UTF-8";
 
 // Mixins
-@import "components/mixins";
+@use "components/mixins";
 
 // Variables
-@import "components/variables";
+@use "components/variables";
 
 // Reset
-@import "components/normalize";
+@use "components/normalize";
 
 // Components
-@import "components/global";
-@import "components/helpers";
-@import "components/grid";
-@import "components/typography";
-@import "components/buttons";
-@import "components/syntax-highlighting";
+@use "components/global";
+@use "components/helpers";
+@use "components/grid";
+@use "components/typography";
+@use "components/buttons";
+@use "components/syntax-highlighting";
 
 // Pages styling
-@import "pages/layout";
-@import "pages/tags";
-@import "pages/archive";
-@import "pages/post";
+@use "pages/layout";
+@use "pages/tags";
+@use "pages/archive";
+@use "pages/post";
+
+@charset "UTF-8";

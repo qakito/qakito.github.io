@@ -1,7 +1,9 @@
 // Post listing
 @use "sass:color";
+@use "components/mixins" as mixins;
+@use "components/variables" as vars;
 .post-listing {
-  background-color: $white;
+  background-color: vars.$white;
   position: absolute;
   top: 400px;
   z-index: 233;
@@ -9,10 +11,10 @@
   padding: 20px 20px 0;
   -webkit-transform: translate3d(0,0,1px);
   transform: translate3d(0,0,1px);
-  @include media-query($small-screen) {
+  @include mixins.media-query(vars.$small-screen) {
     padding: 50px 30px 0;
   }
-  @include media-query($medium-screen) {
+  @include mixins.media-query(vars.$medium-screen) {
     height: 100vh;
     overflow-y: scroll;
     position: initial;
@@ -24,7 +26,7 @@
   float: right;
   font-weight: bold;
   font-style: italic;
-  color: $info;
+  color: vars.$info;
   font-size: 13px;
   padding-right: 20px;
 }
@@ -39,8 +41,8 @@ section.post {
 .back-home a {
   font-size: 13px;
   font-weight: bold;
-  color: $info;
-  border: 1px solid color.adjust($text-color, $lightness: 45%);
+  color: vars.$info;
+  border: 1px solid color.adjust(vars.$text-color, $lightness: 45%);
   border-radius: 0.4em;
   padding: 0.5em 1em;
 }
@@ -51,12 +53,12 @@ section.post {
 }
 
 .post-title-link {
-	color: $primary;
+	color: vars.$primary;
 	font-size: 14px;
 	margin-left: 10px;
 	&:hover,
 	&:focus {
-		color: color.adjust($primary, $lightness: 14%);
+		color: color.adjust(vars.$primary, $lightness: 14%);
 	}
 }
 
@@ -65,18 +67,18 @@ section.post {
   font-size: 13px;
   font-weight: bold;
 	.post-date {
-		color: $secondary;
+		color: vars.$secondary;
 	}
 	.post-author {
 		text-transform: uppercase;
-		color: $warning;
+		color: vars.$warning;
 	}
   .post-cat {
 		text-transform: uppercase;
-		color: $warning;
+		color: vars.$warning;
 	}
   .read-time {
-    color: $primary;
+    color: vars.$primary;
   }
 }
 
@@ -118,13 +120,13 @@ a.read-more {
 
 .post-navigation {
   background-color: #f6f6f6;
-  @include box-shadow;
+  @include mixins.box-shadow;
 }
 .leonids-icon {
   margin: 0 auto;
   padding: 20px 30px;
   text-align: center;
-  color: $warning;
+  color: vars.$warning;
   font-size: 16px;
   line-height: 16px;
 }
@@ -169,7 +171,7 @@ a.read-more {
       margin-right: 0.5em;
       span {
         display: none;
-        @include media-query($small-screen) {
+        @include mixins.media-query(vars.$small-screen) {
           display: inline;
           margin: 0.5em;
         }
@@ -179,70 +181,70 @@ a.read-more {
 }
 .twitter {
   background-color: #77bcf1;
-  color: $white;
+  color: vars.$white;
   border-color: #77bcf1;
   &:visited {
-    color: $white;
+    color: vars.$white;
     border-color: #77bcf1;
   }
   &:hover {
-    background-color: $white;
+    background-color: vars.$white;
     color: #77bcf1;
     border-color: #77bcf1;
   }
 }
 .facebook {
   background-color: #627aac;
-  color: $white;
+  color: vars.$white;
   border-color: #627aac;
   &:visited {
-    color: $white;
+    color: vars.$white;
     border-color: #627aac;
   }
   &:hover {
-    background-color: $white;
+    background-color: vars.$white;
     color: #627aac;
     border-color: #627aac;
   }
 }
 .google-plus {
   background-color: #e36f60;
-  color: $white;
+  color: vars.$white;
   border-color: #e36f60;
   &:visited {
-    color: $white;
+    color: vars.$white;
     border-color: #e36f60;
   }
   &:hover {
-    background-color: $white;
+    background-color: vars.$white;
     color: #e36f60;
     border-color: #e36f60;
   }
 }
 .hacker-news {
   background-color: #f60;
-  color: $white;
+  color: vars.$white;
   border-color: #f60;
   &:visited {
-    color: $white;
+    color: vars.$white;
     border-color: #f60;
   }
   &:hover {
-    background-color: $white;
+    background-color: vars.$white;
     color: #f60;
     border-color: #f60;
   }
 }
 .reddit {
   background-color: #5f99cf;
-  color: $white;
+  color: vars.$white;
   border-color: #5f99cf;
   &:visited {
-    color: $white;
+    color: vars.$white;
     border-color: #5f99cf;
   }
   &:hover {
-    background-color: $white;
+    background-color: vars.$white;
     color: #5f99cf;
     border-color: #5f99cf;
   }
