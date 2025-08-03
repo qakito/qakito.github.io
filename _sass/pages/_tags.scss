@@ -1,5 +1,4 @@
 @use "sass:color";
-@use "components/variables" as vars;
 ul.tag-cloud {
   padding: 2em 0 3em;
   margin: 0;
@@ -19,7 +18,7 @@ ul.tag-cloud {
   .tag-group {
     margin-bottom: 2em;
     .tag-group-title {
-      color: vars.$warning;
+      color: $warning;
       text-transform: capitalize;
     }
 
@@ -27,10 +26,10 @@ ul.tag-cloud {
       padding-left: 1em;
       margin-bottom: .5em;
       a {
-        color: vars.$text-color;
+        color: $text-color;
         &:hover,
         &:focus {
-          color: color.adjust(vars.$text-color, $lightness: 24%);
+          color: color.adjust($text-color, $lightness: 24%);
         }
       }
     }
@@ -41,7 +40,7 @@ ul.tag-cloud {
   .cat-group {
     margin-bottom: 2em;
     .cat-group-title {
-      color: vars.$warning;
+      color: $warning;
       text-transform: capitalize;
     }
 
@@ -49,10 +48,10 @@ ul.tag-cloud {
       padding-left: 1em;
       margin-bottom: .5em;
       a {
-        color: vars.$danger;
+        color: $danger;
         &:hover,
         &:focus {
-          color: color.adjust(vars.$danger, $lightness: 24%);
+          color: color.adjust($danger, $lightness: 24%);
         }
       }
     }

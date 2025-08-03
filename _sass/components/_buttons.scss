@@ -1,92 +1,92 @@
 /* Buttons
    ========================================================================== */
-@use "variables" as vars;
+
 // General
 .btn {
   display: inline-block;
   margin-bottom: 20px;
   padding: 8px 20px;
   font-size: 0.875em;
-  font-family: vars.$font-family-base;
+  font-family: $font-family-base;
   font-weight: 700;
-  background-color: vars.$primary;
-  color: vars.$white;
+  background-color: $primary;
+  color: $white;
   border-width: 2px !important;
   border-style: solid !important;
-  border-color: vars.$primary;
+  border-color: $primary;
   text-decoration: none !important;
   border-radius: 5px;
   &:visited {
-    color: vars.$white;
-    border-color: vars.$primary;
+    color: $white;
+    border-color: $primary;
   }
   &:hover {
-    background-color: vars.$white;
-    color: vars.$primary;
-    border-color: vars.$primary;
+    background-color: $white;
+    color: $primary;
+    border-color: $primary;
   }
 }
 
 // Success button
 .btn-success {
-  background-color: vars.$success;
-  color: vars.$white;
-  border-color: vars.$success;
+  background-color: $success;
+  color: $white;
+  border-color: $success;
   &:visited {
-    color: vars.$white;
-    border-color: vars.$success;
+    color: $white;
+    border-color: $success;
   }
   &:hover {
-    background-color: vars.$white;
-    color: vars.$success;
-    border-color: vars.$success;
+    background-color: $white;
+    color: $success;
+    border-color: $success;
   }
 }
 
 // Warning button
 .btn-warning {
-  background-color: vars.$warning;
-  color: vars.$white;
-  border-color: vars.$warning;
+  background-color: $warning;
+  color: $white;
+  border-color: $warning;
   &:visited {
-    color: vars.$white;
-    border-color: vars.$warning;
+    color: $white;
+    border-color: $warning;
   }
   &:hover {
-    background-color: vars.$white;
-    color: vars.$warning;
-    border-color: vars.$warning;
+    background-color: $white;
+    color: $warning;
+    border-color: $warning;
   }
 }
 
 // Danger button
 .btn-danger {
-  background-color: vars.$danger;
-  color: vars.$white;
-  border-color: vars.$danger;
+  background-color: $danger;
+  color: $white;
+  border-color: $danger;
   &:visited {
-    color: vars.$white;
-    border-color: vars.$danger;
+    color: $white;
+    border-color: $danger;
   }
   &:hover {
-    background-color: vars.$white;
-    color: vars.$danger;
-    border-color: vars.$danger;
+    background-color: $white;
+    color: $danger;
+    border-color: $danger;
   }
 }
 
 // Information button
 .btn-info {
-  background-color: vars.$info;
-  color: vars.$white;
-  border-color: vars.$info;
+  background-color: $info;
+  color: $white;
+  border-color: $info;
   &:visited {
-    border-color: vars.$info;
-    color: vars.$white;
+    border-color: $info;
+    color: $white;
   }
   &:hover {
-    background-color: vars.$white;
-    color: vars.$info;
-    border-color: vars.$info;
+    background-color: $white;
+    color: $info;
+    border-color: $info;
   }
 }

@@ -3,14 +3,12 @@
   */
 
 // Displays
-@use "mixins" as mixins;
-@use "variables" as vars;
 .block { display: block }
 .inline-block { display: inline-block }
 
 .hidden-md {
   display: none;
-  @include mixins.media-query(vars.$medium-screen) {
+  @include media-query($medium-screen) {
     display: inline-block;
   }
 }
@@ -56,17 +54,17 @@
 .mrm           { margin-right: .5em }
 .mlm           { margin-left: .5em }
 
-.m1            { margin: vars.$base-space-unit }
-.mt1           { margin-top: vars.$base-space-unit }
-.mb1           { margin-bottom: vars.$base-space-unit }
-.mr1           { margin-right: vars.$base-space-unit }
-.ml1           { margin-left: vars.$base-space-unit }
+.m1            { margin: $base-space-unit }
+.mt1           { margin-top: $base-space-unit }
+.mb1           { margin-bottom: $base-space-unit }
+.mr1           { margin-right: $base-space-unit }
+.ml1           { margin-left: $base-space-unit }
 
-.m2            { margin: vars.$base-space-unit*2 }
-.mt2           { margin-top: vars.$base-space-unit*2 }
-.mb2           { margin-bottom: vars.$base-space-unit*2 }
-.mr2           { margin-right: vars.$base-space-unit*2 }
-.ml2           { margin-left: vars.$base-space-unit*2 }
+.m2            { margin: $base-space-unit*2 }
+.mt2           { margin-top: $base-space-unit*2 }
+.mb2           { margin-bottom: $base-space-unit*2 }
+.mr2           { margin-right: $base-space-unit*2 }
+.ml2           { margin-left: $base-space-unit*2 }
 
 // Padding helpers
 .p0            { padding: 0 }
@@ -148,49 +146,49 @@
 
 // Colors helpers
 .primary-text-color {
-  color: vars.$primary;
+  color: $primary;
 }
 
 .primary-bg-color {
-  background-color: vars.$primary;
+  background-color: $primary;
 }
 
 .secondary-text-color {
-  color: vars.$secondary;
+  color: $secondary;
 }
 
 .secondary-bg-color {
-  background-color: vars.$secondary;
+  background-color: $secondary;
 }
 
 .success-text-color {
-  color: vars.$success;
+  color: $success;
 }
 
 .success-bg-color {
-  background-color: vars.$success;
+  background-color: $success;
 }
 
 .danger-text-color {
-  color: vars.$danger;
+  color: $danger;
 }
 
 .danger-bg-color {
-  background-color: vars.$danger;
+  background-color: $danger;
 }
 
 .info-text-color {
-  color: vars.$info;
+  color: $info;
 }
 
 .info-bg-color {
-  background-color: vars.$info;
+  background-color: $info;
 }
 
 .warning-text-color {
-  color: vars.$warning;
+  color: $warning;
 }
 
 .warning-bg-color {
-  background-color: vars.$warning;
+  background-color: $warning;
 }

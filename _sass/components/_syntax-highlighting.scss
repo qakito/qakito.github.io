@@ -1,14 +1,14 @@
 /* ==========================================================================
    Syntax highlighting
    ========================================================================== */
-@use "variables" as vars;
+
 
 pre, code {
-  font-family: vars.$font-family-monospace;
+  font-family: $font-family-monospace;
   color: #525252;
   font-size: 0.9em;
   background-color: #f8f8f8;
-  font-size: (vars.$font-size-base - 3);
+  font-size: ($font-size-base - 3);
 }
 code {
   color: #e96900;
@@ -22,7 +22,7 @@ pre { // only apply for code blocks
   display: block;
   padding: 1em;
   margin: 0 0 1em;
-  line-height: vars.$base-line-height * 0.925;
+  line-height: $base-line-height * 0.925;
   word-break: break-all;
   word-wrap: break-word;
   border-radius: 0;
