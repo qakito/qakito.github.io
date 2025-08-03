@@ -1,5 +1,4 @@
 /* LAYOUT CSS */
-@use "sass:color";
 .cover {
   background-color: $background-color;
   position: fixed;
@@ -64,7 +63,7 @@
         color: $secondary;
         &:hover,
         &:focus {
-          color: color.adjust($secondary, $lightness: 14%);
+          color: lighten($secondary, 14%);
         }
       }
     }
@@ -91,7 +90,7 @@
       color: $secondary;
       &:hover,
       &:focus {
-        color: color.adjust($secondary, $lightness: 14%);
+        color: lighten($secondary, 14%);
       }
     }
   }

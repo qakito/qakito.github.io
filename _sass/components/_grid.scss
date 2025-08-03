@@ -3,7 +3,6 @@
   */
 
 // Container
-@use "sass:string";
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -20,8 +19,8 @@
   }
 }
 .container .row {
-  margin-left: calc((-1 * $gutter-width / 2));
-  margin-right: calc((-1 * $gutter-width / 2));
+  margin-left: (-1 * $gutter-width / 2);
+  margin-right: (-1 * $gutter-width / 2);
 }
 
 // Section
@@ -61,7 +60,7 @@
 
     $i: 1;
     @while $i <= $num-cols {
-      $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
       &.s#{$i} {
         width: $perc;
         margin-left: 0;
@@ -70,7 +69,7 @@
     }
     $i: 1;
     @while $i <= $num-cols {
-      $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+      $perc: unquote((100 / ($num-cols / $i)) + "%");
       &.offset-s#{$i} {
         margin-left: $perc;
       }
@@ -82,7 +81,7 @@
 
       $i: 1;
       @while $i <= $num-cols {
-        $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.m#{$i} {
           width: $perc;
           margin-left: 0;
@@ -91,7 +90,7 @@
       }
       $i: 1;
       @while $i <= $num-cols {
-        $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.offset-m#{$i} {
           margin-left: $perc;
         }
@@ -104,7 +103,7 @@
 
       $i: 1;
       @while $i <= $num-cols {
-        $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.l#{$i} {
           width: $perc;
           margin-left: 0;
@@ -113,7 +112,7 @@
       }
       $i: 1;
       @while $i <= $num-cols {
-        $perc: string.unquote(calc((100 / ($num-cols / $i))) + "%");
+        $perc: unquote((100 / ($num-cols / $i)) + "%");
         &.offset-l#{$i} {
           margin-left: $perc;
         }

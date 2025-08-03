@@ -69,8 +69,8 @@ $table-striped-color: #f2f2f2 !default;
 // Grid Variables
 $num-cols: 12 !default;
 $gutter-width: 1.5rem !default;
-$element-top-margin: calc($gutter-width/3) !default;
-$element-bottom-margin: calc(($gutter-width*2)/3) !default;
+$element-top-margin: $gutter-width/3 !default;
+$element-bottom-margin: ($gutter-width*2)/3 !default;
 
 // Media Query Ranges
 $small-screen: 600px !default;
