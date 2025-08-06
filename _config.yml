@@ -67,3 +67,8 @@ owner:
   flickr: #username
   500px: #username
   codepen: #username
+  giscus:
+    repo: qakito/qakito.github.io
+    repo-id: MDEwOlJlcG9zaXRvcnkzOTE2MjY1NDg=
+    category: Announcements
+    category-id: DIC_kwDOF1e_NM4Ct10h
